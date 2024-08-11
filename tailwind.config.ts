@@ -1,17 +1,38 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'blue-main': '#229ED9',
+      white: '#ffffff',
+      blue: '#60CDF6',
+      yellow: '#FEC653',
+      green: '#2FB967',
+      text: '#222222',
+    },
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        '2xl': '1200px',
+        xl: '1140px',
+        lg: '960px',
+        md: '720px',
+        sm: '540px'
+      }
+
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      gridTemplateColumns: {
+        hero: '5fr 7fr',
+      },
+      content: {
+        dots: 'url("/Group.svg")',
       },
     },
   },
