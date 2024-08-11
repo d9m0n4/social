@@ -14,6 +14,8 @@ const config: Config = {
       yellow: '#FEC653',
       green: '#2FB967',
       text: '#222222',
+      gray: '#787878',
+      black: '#222222',
     },
     container: {
       center: true,
@@ -23,11 +25,14 @@ const config: Config = {
         xl: '1140px',
         lg: '960px',
         md: '720px',
-        sm: '540px'
-      }
-
+        sm: '540px',
+      },
     },
     extend: {
+      boxShadow: {
+        blockShadow: '0 -1px 16px rgba(34, 34, 34, 0.1), 0 6px 16px rgba(34, 34, 34, 0.1)',
+        blockShadowHover: '0px 2px 24px rgba(34, 34, 34, 0.1), 4px 8px 16px rgba(34, 34, 34, 0.1)',
+      },
       gridTemplateColumns: {
         hero: '5fr 7fr',
       },
