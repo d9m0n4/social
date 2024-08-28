@@ -8,16 +8,16 @@ import { Header } from '@/widgets/header/Header';
 export default function Home() {
   return (
     <>
-      <div className="bg-gradient-to-b from-blue to-white h-dvh flex flex-col">
+      <div className="flex h-dvh flex-col">
         <Header />
-        <section className="container grid grid-cols-hero grid-rows-2 h-full">
-          <div className="flex relative flex-col gap-2 text-[40px] font-bold justify-center before:absolute before:content-dots before:top-8 before:-left-8">
-            <h1 className="text-text block relative">Центр социального обслуживания</h1>
+        <section className="container grid h-full grid-cols-hero grid-rows-2">
+          <div className="relative flex flex-col justify-center gap-2 text-[40px] font-bold before:absolute before:-left-8 before:top-8 before:content-dots">
+            <h1 className="relative block text-text">Центр социального обслуживания</h1>
             <h1 className="text-green">Яранского района</h1>
           </div>
 
-          <div className="flex justify-end relative">
-            <div className="absolute top-[-64px]">
+          <div className="relative flex justify-end">
+            <div className="absolute top-[-96px]">
               <MainImage />
             </div>
           </div>
@@ -27,7 +27,8 @@ export default function Home() {
               <li>
                 <a
                   href="https://vk.com/ksornc43"
-                  className="flex gap-2 items-center text-gray hover:text-black transition-colors"
+                  target="_blank"
+                  className="flex items-center gap-2 text-gray transition-colors hover:text-black"
                 >
                   <Image src="/icons/vk.svg" alt={'vk'} width={32} height={32} />
                   Группа Вконтакте
@@ -36,7 +37,8 @@ export default function Home() {
               <li>
                 <a
                   href="https://ok.ru/group/62863917252777"
-                  className="flex gap-2 items-center text-gray hover:text-black transition-colors"
+                  target="_blank"
+                  className="flex items-center gap-2 text-gray transition-colors hover:text-black"
                 >
                   <Image src="/icons/ok.svg" alt={'ok'} width={32} height={32} />
                   Группа в Одноклассники
@@ -45,15 +47,16 @@ export default function Home() {
               <li>
                 <a
                   href="https://t.me/ksornc43"
-                  className="flex gap-2 items-center text-gray hover:text-black transition-colors"
+                  target="_blank"
+                  className="flex items-center gap-2 text-gray transition-colors hover:text-black"
                 >
                   <Image src="/icons/tg.svg" alt={'tg'} width={32} height={32} />
-                  Группа в Телеграм
+                  Канал в Телеграм
                 </a>
               </li>
             </ul>
           </div>
-          <div className="relative after:absolute after:content-dots after:top-8 after:-right-8" />
+          <div className="relative after:absolute after:-right-8 after:top-8 after:content-dots" />
         </section>
       </div>
       <main className="py-12">
@@ -65,8 +68,8 @@ export default function Home() {
       </main>
       <footer>
         <div className="container py-6">
-          <nav className="text-black text-lg text-center leading-[22px]">
-            <ul className="flex gap-6 flex-wrap justify-center">
+          <nav className="text-center text-lg leading-[22px] text-black">
+            <ul className="flex flex-wrap justify-center gap-6">
               <li>
                 <Link href="/">Главная</Link>
               </li>

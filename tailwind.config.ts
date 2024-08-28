@@ -9,13 +9,14 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'blue-main': '#229ED9',
+      'blue-main': '#8DCEF4',
       white: '#ffffff',
       blue: '#60CDF6',
-      yellow: '#FEC653',
-      green: '#2FB967',
+      yellow: '#F6C31A',
+      green: '#48AD43',
       text: '#222222',
-      gray: '#787878',
+      gray: '#858585',
+      graybg: '#f6f6f6',
       black: '#222222',
     },
     container: {
