@@ -11,12 +11,12 @@ export default function Home() {
       <div className="flex h-dvh flex-col">
         <Header />
         <section className="container grid h-full grid-cols-hero grid-rows-2">
-          <div className="relative flex flex-col justify-center gap-2 text-[40px] font-bold before:absolute before:-left-8 before:top-8 before:content-dots">
+          <div className="col-span-full lg:col-span-1 relative flex flex-col justify-center gap-2 text-[40px] font-bold before:absolute before:-left-8 before:top-8 before:content-dots">
             <h1 className="relative block text-text">Центр социального обслуживания</h1>
             <h1 className="text-green">Яранского района</h1>
           </div>
 
-          <div className="relative flex justify-end">
+          <div className=" relative hidden xl:flex justify-end">
             <div className="absolute top-[-96px]">
               <MainImage />
             </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const Additionally = () => {
   return (
     <div className="container">
-      <div className="mb-24 grid grid-cols-4 gap-8 rounded-2xl p-4 text-gray">
+      <div className="mb-24 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-8 rounded-2xl p-4 text-gray">
         <Link href="/">
           <div className="flex h-40 items-center justify-center rounded-2xl bg-[#f6f6f6] px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
             <h4>Клубы</h4>

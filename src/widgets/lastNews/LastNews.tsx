@@ -11,7 +11,7 @@ export const LastNews = () => {
           </h2>
         </div>
         <div className="grid grid-cols-12 gap-8">
-          <div className="relative col-span-5 flex h-72 items-end rounded-2xl px-8 py-6">
+          <div className="relative col-span-full xl:col-span-5 lg:col-span-6 flex h-72 items-end rounded-2xl px-8 py-6">
             <h1 className="z-10 cursor-pointer text-2xl text-white transition-colors hover:text-black">
               8 июля в России отмечается День семьи, любви и верности.
             </h1>
@@ -20,7 +20,7 @@ export const LastNews = () => {
             <div className="absolute inset-0 rounded-2xl bg-black bg-opacity-35" />
           </div>
 
-          <div className="relative col-span-7 flex h-72 items-end rounded-2xl px-8 py-6">
+          <div className="relative col-span-full xl:col-span-7 lg:col-span-6 flex h-72 items-end rounded-2xl px-8 py-6">
             <h1 className="z-10 cursor-pointer text-2xl text-white transition-colors hover:text-black">
               8 июля в России отмечается День семьи, любви и верности.
             </h1>
@@ -29,7 +29,7 @@ export const LastNews = () => {
             <div className="absolute inset-0 rounded-2xl bg-black bg-opacity-35" />
           </div>
 
-          <div className="relative col-span-7 flex h-72 items-end rounded-2xl px-8 py-6">
+          <div className="relative col-span-full xl:col-span-7 lg:col-span-6 flex h-72 items-end rounded-2xl px-8 py-6">
             <h1 className="z-10 cursor-pointer text-2xl text-white transition-colors hover:text-black">
               8 июля в России отмечается День семьи, любви и верности.
             </h1>
@@ -38,7 +38,7 @@ export const LastNews = () => {
             <div className="absolute inset-0 rounded-2xl bg-black bg-opacity-35" />
           </div>
 
-          <div className="relative col-span-5 flex h-72 items-end rounded-2xl px-8 py-6">
+          <div className="relative col-span-full xl:col-span-5 lg:col-span-6 flex h-72 items-end rounded-2xl px-8 py-6">
             <h1 className="z-10 cursor-pointer text-2xl text-white transition-colors hover:text-black">
               8 июля в России отмечается День семьи, любви и верности.
             </h1>
