@@ -4,19 +4,21 @@ import { MainImage } from '@/components/MainImage';
 import { LastNews } from '@/widgets/lastNews/LastNews';
 import { Additionally } from '@/widgets/additionally/Additionally';
 import { Header } from '@/widgets/header/Header';
+import POSWidget from '@/widgets/POS/POSWidget';
 
 export default function Home() {
   return (
     <>
-      <div className="flex h-dvh flex-col">
+      <div className="relative flex h-dvh flex-col">
+        <div className="absolute"></div>
         <Header />
         <section className="container grid h-full grid-cols-hero grid-rows-2">
-          <div className="col-span-full lg:col-span-1 relative flex flex-col justify-center gap-2 text-[40px] font-bold before:absolute before:-left-8 before:top-8 before:content-dots">
+          <div className="relative col-span-full flex flex-col justify-center gap-2 text-[40px] font-bold before:absolute before:-left-8 before:top-8 before:content-dots lg:col-span-1">
             <h1 className="relative block text-text">Центр социального обслуживания</h1>
             <h1 className="text-green">Яранского района</h1>
           </div>
 
-          <div className=" relative hidden xl:flex justify-end">
+          <div className="relative hidden justify-end xl:flex">
             <div className="absolute top-[-96px]">
               <MainImage />
             </div>
@@ -60,6 +62,11 @@ export default function Home() {
         </section>
       </div>
       <main className="py-12">
+        <div className="container">
+          <div className="p-4">
+            <POSWidget />
+          </div>
+        </div>
         <Additionally />
         <LastNews />
         <div className="container">
