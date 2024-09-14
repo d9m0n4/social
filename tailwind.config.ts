@@ -41,8 +41,24 @@ const config: Config = {
       content: {
         dots: 'url("/Group.svg")',
       },
+      clipPath: {
+        'polygonShape': 'clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%);',
+        'initialShape': 'clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+      function ({addUtilities}: any) {
+    const newUtilities = {
+      '.polygonShape' : {
+        'clip-path': 'polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%)',
+      },
+      '.initialShape' : {
+        'clip-path': 'polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%)'
+      }
+    }
+    addUtilities(newUtilities)
+      }
+  ],
 };
 export default config;

@@ -10,22 +10,22 @@ export const Additionally = () => {
           </div>
         </Link>
         <Link href="/" className="cursor-pointers text-center">
-          <div className="flex h-40 items-center justify-center rounded-2xl bg-[#f6f6f6] px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
+          <div className="flex h-40 items-center justify-center rounded-2xl bg-graybg px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
             <h4>Сведения об образовательной организации</h4>
           </div>
         </Link>
         <Link href="/">
-          <div className="flex h-40 items-center justify-center rounded-2xl bg-[#f6f6f6] px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
+          <div className="flex h-40 items-center justify-center rounded-2xl bg-graybg px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
             <h4>Инновационная деятельность</h4>
           </div>
         </Link>
         <Link href="/">
-          <div className="flex h-40 items-center justify-center rounded-2xl bg-[#f6f6f6] px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
+          <div className="flex h-40 items-center justify-center rounded-2xl bg-graybg px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
             <h4>Служба ранней помощи</h4>
           </div>
         </Link>
         <Link href="/">
-          <div className="flex h-40 items-center justify-center rounded-2xl bg-[#f6f6f6] px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
+          <div className="flex h-40 items-center justify-center rounded-2xl bg-graybg px-2 text-center text-2xl font-medium transition-transform hover:scale-105 hover:text-black">
             <h4>Противодействие коррупции</h4>
           </div>
         </Link>
