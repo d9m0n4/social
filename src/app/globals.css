@@ -19,6 +19,7 @@
 body {
   color: var(--foreground-rgb);
   font-size: 16px;
+  background-color: #f5faff;
 }
 
 #js-show-iframe-wrapper {

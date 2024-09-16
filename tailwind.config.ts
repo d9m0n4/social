@@ -32,7 +32,7 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        blockShadow: '0 -1px 16px rgba(34, 34, 34, 0.1), 0 6px 16px rgba(34, 34, 34, 0.1)',
+        blockShadow: '0px 8px 40px 0px rgba(141, 206, 244, 0.1)',
         blockShadowHover: '0px 2px 24px rgba(34, 34, 34, 0.1), 4px 8px 16px rgba(34, 34, 34, 0.1)',
       },
       gridTemplateColumns: {
@@ -42,23 +42,23 @@ const config: Config = {
         dots: 'url("/Group.svg")',
       },
       clipPath: {
-        'polygonShape': 'clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%);',
-        'initialShape': 'clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);'
-      }
+        polygonShape: 'clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%);',
+        initialShape: 'clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);',
+      },
     },
   },
   plugins: [
-      function ({addUtilities}: any) {
-    const newUtilities = {
-      '.polygonShape' : {
-        'clip-path': 'polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%)',
-      },
-      '.initialShape' : {
-        'clip-path': 'polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%)'
-      }
-    }
-    addUtilities(newUtilities)
-      }
+    function ({ addUtilities }: any) {
+      const newUtilities = {
+        '.polygonShape': {
+          'clip-path': 'polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%)',
+        },
+        '.initialShape': {
+          'clip-path': 'polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%)',
+        },
+      };
+      addUtilities(newUtilities);
+    },
   ],
 };
 export default config;

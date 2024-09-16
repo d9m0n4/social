@@ -1,10 +1,11 @@
+import { MainNavigation } from '@/components/mainNavigation/MainNavigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const Header = () => {
   return (
     <header>
-      <div className="flex border-b-[1px] border-blue py-8 text-black">
+      <div className="flex py-8 text-black">
         <div className="container flex">
           <div className="flex items-start gap-4">
             <div className="flex">
@@ -23,32 +24,7 @@ export const Header = () => {
       </div>
       <div className="container">
         <nav className="my-12 max-w-[630px] text-lg font-medium leading-[22px] text-black">
-          <ul className="flex flex-wrap gap-6">
-            <li>
-              <Link href="/">Главная</Link>
-            </li>
-            <li>
-              <Link href="/">Новости</Link>
-            </li>
-            <li>
-              <Link href="/">Центр</Link>
-            </li>
-            <li>
-              <Link href="/">Подразделения</Link>
-            </li>
-            <li>
-              <Link href="/">Обращения граждан</Link>
-            </li>
-            <li>
-              <Link href="/">Контакты</Link>
-            </li>
-            <li>
-              <Link href="/">Закупки</Link>
-            </li>
-            <li>
-              <Link href="/">Финансово-хозяйственная деятельность</Link>
-            </li>
-          </ul>
+          <MainNavigation />
         </nav>
       </div>
     </header>
