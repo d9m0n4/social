@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const LastNews = () => {
   return (
     <div className="container">
-      <div className="mb-24">
+      <div className="relative mb-24 before:absolute before:-left-8 before:bottom-0 before:content-dots">
         <div className="mb-12 text-3xl font-medium">
           <h2>
             Последние <span className="text-green">новости</span>
@@ -21,7 +21,7 @@ export const LastNews = () => {
               </h2>
               <span className="text-gray">23-07-2024</span>
             </div>
-            <div className="relative flex basis-1/2 transition-all polygonShape group-hover:initialShape">
+            <div className="triangle relative flex basis-1/2 transition-all group-hover:initialShape">
               <Image
                 src="/new.jpg"
                 alt="news"

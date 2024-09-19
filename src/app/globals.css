@@ -258,3 +258,15 @@ body {
   width: 100%;
   max-width: var(--pos-banner-fluid-5__button-wrap-max-width);
 }
+
+@layer components {
+  .triangle {
+    --r: 30px;
+
+    aspect-ratio: cos(30deg);
+    -webkit-mask: linear-gradient(90deg, #0000 calc(3 * 30px / 2), #000 0),
+      radial-gradient(30px at calc(2 * 30px) 50%, #000 98%, #0000 101%);
+    clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%);
+    object-fit: cover;
+  }
+}

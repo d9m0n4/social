@@ -4,7 +4,9 @@ export default function NewsPage() {
   return (
     <>
       <Header />
-      <div>Все новости</div>
+      <div className="container">
+        <div></div>
+      </div>
     </>
   );
 }

@@ -4,7 +4,7 @@ export default function CurrentNews() {
   return (
     <>
       <Header />
-      <div>Новость</div>
+      <div className="container">Новость</div>
     </>
   );
 }
