@@ -8,7 +8,7 @@ export const MainNavigation = () => {
   console.log(pathname);
 
   return (
-    <nav className="my-12 max-w-[630px] text-lg font-medium leading-[22px] text-black">
+    <nav className="my-12 max-w-[630px] text-lg font-medium leading-[22px] text-[#454545]">
       <ul className="flex flex-wrap gap-6">
         {navigationList.map(({ link, title }) => (
           <li key={title}>

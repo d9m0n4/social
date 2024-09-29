@@ -17,7 +17,7 @@ const config: Config = {
       text: '#222222',
       gray: '#858585',
       graybg: '#f6f6f6',
-      black: '#222222',
+      black: '#000',
     },
     container: {
       center: true,
@@ -34,6 +34,7 @@ const config: Config = {
       boxShadow: {
         blockShadow: '0px 8px 40px 0px rgba(141, 206, 244, 0.1)',
         blockShadowHover: '0px 2px 24px rgba(34, 34, 34, 0.1), 4px 8px 16px rgba(34, 34, 34, 0.1)',
+        ash: '0 11px 34px 0 rgba(0,0,0,.2)',
       },
       gridTemplateColumns: {
         hero: '5fr 7fr',

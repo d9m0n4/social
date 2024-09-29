@@ -8,11 +8,8 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'next',
-    'turbo',
     'prettier',
     'eslint:recommended',
-    'airbnb',
-    'airbnb/hooks',
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
