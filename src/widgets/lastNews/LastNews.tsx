@@ -13,7 +13,7 @@ export const LastNews = () => {
         <div className="grid grid-cols-12 gap-8">
           <Link
             href={'/news/1'}
-            className="group relative col-span-full flex h-72 cursor-pointer rounded-2xl bg-white shadow-blockShadow transition-all hover:scale-105 lg:col-span-6"
+            className="group relative col-span-full flex h-72 cursor-pointer rounded-2xl bg-white shadow-blockShadow lg:col-span-6"
           >
             <div className="flex basis-1/2 flex-col justify-between p-6">
               <h2 className="text-2xl font-medium">
@@ -21,13 +21,13 @@ export const LastNews = () => {
               </h2>
               <span className="text-gray">23-07-2024</span>
             </div>
-            <div className="triangle relative flex basis-1/2 transition-all group-hover:initialShape">
+            <div className="triangle relative flex basis-1/2 rounded-2xl">
               <Image
                 src="/new.jpg"
                 alt="news"
                 fill
                 objectFit="cover"
-                className="rounded-br-2xl rounded-tr-2xl"
+                className="rounded-br-2xl rounded-tr-2xl transition-all group-hover:scale-105"
               />
             </div>
           </Link>

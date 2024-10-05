@@ -22,13 +22,13 @@ export default function Home() {
         </div>
         <Header />
         <section className="container grid h-full grid-cols-hero grid-rows-2 items-end">
-          <div className="relative col-span-full flex flex-col justify-center gap-2 text-[40px] font-bold leading-[48px] before:absolute before:-left-8 before:top-8 before:content-dots lg:col-span-1">
+          <div className="relative col-span-full flex flex-col justify-center gap-2 self-center text-4xl font-bold leading-snug before:absolute before:-left-8 before:-top-8 before:content-dots lg:col-span-1">
             <h1 className="relative block text-text">Центр социального обслуживания населения</h1>
             <h1 className="text-green">Яранского района</h1>
           </div>
 
           <div className="relative hidden h-full justify-end xl:flex">
-            <div className="absolute -top-10 flex rounded-2xl">
+            <div className="absolute -top-20 flex rounded-2xl">
               <MainImage />
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="relative after:absolute after:-right-8 after:top-8 after:content-dots" />
+          <div className="relative self-center after:absolute after:-right-8 after:top-8 after:content-dots" />
         </section>
       </div>
       <main className="py-12">
