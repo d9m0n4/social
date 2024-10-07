@@ -21,14 +21,16 @@ export const LastNews = () => {
               </h2>
               <span className="text-gray">23-07-2024</span>
             </div>
-            <div className="triangle relative flex basis-1/2 rounded-2xl">
-              <Image
-                src="/new.jpg"
-                alt="news"
-                fill
-                objectFit="cover"
-                className="rounded-br-2xl rounded-tr-2xl transition-all group-hover:scale-105"
-              />
+            <div className="relative basis-1/2">
+              <div className="absolute flex rotate-45 rounded-2xl">
+                <Image
+                  src="/1.jpg"
+                  alt="news"
+                  fill
+                  objectFit="cover"
+                  className="transition-all group-hover:scale-105"
+                />
+              </div>
             </div>
           </Link>
 

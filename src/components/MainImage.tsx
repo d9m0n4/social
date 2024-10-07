@@ -1,4 +1,5 @@
 import image from '../../public/new.jpg';
+import image2 from '../../public/1.jpg';
 
 export const MainImage = () => (
   <svg
@@ -55,25 +56,23 @@ export const MainImage = () => (
     />
     <defs>
       <pattern id="pattern0_276_273" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlinkHref="#image0_276_273" transform="scale(0.0015)" />
+        <image
+          id="image0_276_273"
+          width={1}
+          height={1}
+          href={image2.src}
+          preserveAspectRatio="xMinYMid slice"
+        />
       </pattern>
       <pattern id="pattern1_276_273" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <use xlinkHref="#image1_276_273" transform="scale(0.0015)" />
+        <image
+          id="image1_276_273"
+          width={1}
+          height={1}
+          href={image.src}
+          preserveAspectRatio="xMidYMid slice"
+        />
       </pattern>
-      <image
-        id="image0_276_273"
-        width={image.width}
-        height={image.height}
-        href={image.src}
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <image
-        id="image1_276_273"
-        width={image.width}
-        height={image.height}
-        href={image.src}
-        preserveAspectRatio="xMidYMid slice"
-      />
     </defs>
   </svg>
 );

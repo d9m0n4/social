@@ -5,20 +5,14 @@ import { LastNews } from '@/widgets/lastNews/LastNews';
 import { Additionally } from '@/widgets/additionally/Additionally';
 import { Header } from '@/widgets/header/Header';
 import POSWidget from '@/widgets/POS/POSWidget';
+import { BgPattern } from '@/components/bgPattern/BgPattern';
 
 export default function Home() {
   return (
     <>
       <div className="relative flex h-dvh flex-col">
         <div className="absolute bottom-0 right-0 top-0 z-0">
-          <svg width="735" viewBox="0 0 735 879" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              opacity="0.6"
-              d="M257.109 41.6425C144.064 119.761 169.485 276.204 92.9233 385.18C66.2715 423.1 31.8339 457.036 13.8664 499.103C-27.3839 595.391 29.3883 704.614 105.376 781.09C141.61 817.573 183.933 850.996 235.141 866.374C274.519 878.199 316.743 878.692 358.193 879L476.016 866.374H547.57H732.519L892 874.237V712.193C892 712.193 890.787 517.14 890.787 440.62C890.787 440.62 892 286.668 892 179.549C892 130.126 892 -1 892 -1C783.215 -1 591.837 -1 591.837 -1C498.453 6.23414 334.494 -11.8395 257.109 41.6425Z"
-              fill="#8DCEF4"
-              fillOpacity="0.16"
-            />
-          </svg>
+          <BgPattern />
         </div>
         <Header />
         <section className="container grid h-full grid-cols-hero grid-rows-2 items-end">
@@ -28,7 +22,7 @@ export default function Home() {
           </div>
 
           <div className="relative hidden h-full justify-end xl:flex">
-            <div className="absolute -top-20 flex rounded-2xl">
+            <div className="absolute -top-20 flex rounded-2xl 2xl:-top-10">
               <MainImage />
             </div>
           </div>
