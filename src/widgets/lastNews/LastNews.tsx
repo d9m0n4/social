@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const LastNews = () => {
+  const news = [1, 2, 3, 4];
+
   return (
     <div className="container">
       <div className="relative mb-24 before:absolute before:-left-8 before:bottom-0 before:content-dots">
@@ -11,64 +13,31 @@ export const LastNews = () => {
           </h2>
         </div>
         <div className="grid grid-cols-12 gap-8">
-          <Link
-            href={'/news/1'}
-            className="group relative col-span-full flex h-72 cursor-pointer rounded-2xl bg-white shadow-blockShadow lg:col-span-6"
-          >
-            <div className="flex basis-1/2 flex-col justify-between p-6">
-              <h2 className="text-2xl font-medium">
-                8 июля в России отмечается День семьи, любви и верности.
-              </h2>
-              <span className="text-gray">23-07-2024</span>
-            </div>
-            <div className="relative basis-1/2">
-              <div className="absolute flex rotate-45 rounded-2xl">
-                <Image
-                  src="/1.jpg"
-                  alt="news"
-                  fill
-                  objectFit="cover"
-                  className="transition-all group-hover:scale-105"
-                />
+          {news.map((newsItem) => (
+            <Link
+              key={newsItem}
+              href={'/news/1'}
+              className="group relative col-span-full flex h-72 cursor-pointer rounded-2xl bg-white shadow-blockShadow lg:col-span-6"
+            >
+              <div className="flex basis-1/2 flex-col justify-between p-6">
+                <h2 className="text-2xl font-medium">
+                  8 июля в России отмечается День семьи, любви и верности.
+                </h2>
+                <span className="text-gray">23-07-2024</span>
               </div>
-            </div>
-          </Link>
-
-          <div className="relative col-span-full flex h-72 rounded-2xl bg-white shadow-blockShadow lg:col-span-6">
-            <div className="flex basis-1/2 flex-col justify-between p-6">
-              <h2 className="text-2xl font-medium">
-                8 июля в России отмечается День семьи, любви и верности.
-              </h2>
-              <span className="text-gray">23-07-2024</span>
-            </div>
-            <div className="relative flex basis-1/2 polygonShape">
-              <Image src="/new.jpg" alt="news" fill objectFit="cover" className="rounded-2xl" />
-            </div>
-          </div>
-
-          <div className="relative col-span-full flex h-72 rounded-2xl bg-white shadow-blockShadow lg:col-span-6">
-            <div className="flex basis-1/2 flex-col justify-between p-6">
-              <h2 className="text-2xl font-medium">
-                8 июля в России отмечается День семьи, любви и верности.
-              </h2>
-              <span className="text-gray">23-07-2024</span>
-            </div>
-            <div className="relative flex basis-1/2 polygonShape">
-              <Image src="/new.jpg" alt="news" fill objectFit="cover" className="rounded-2xl" />
-            </div>
-          </div>
-
-          <div className="relative col-span-full flex h-72 rounded-2xl bg-white shadow-blockShadow lg:col-span-6">
-            <div className="flex basis-1/2 flex-col justify-between p-6">
-              <h2 className="text-2xl font-medium">
-                8 июля в России отмечается День семьи, любви и верности.
-              </h2>
-              <span className="text-gray">23-07-2024</span>
-            </div>
-            <div className="relative flex basis-1/2 polygonShape">
-              <Image src="/new.jpg" alt="news" fill objectFit="cover" className="rounded-2xl" />
-            </div>
-          </div>
+              <div className="relative basis-1/2 overflow-hidden rounded-2xl">
+                <div className="absolute -right-[30%] flex h-full w-full rotate-45 overflow-hidden rounded-2xl">
+                  <Image
+                    src="/1.jpg"
+                    alt="news"
+                    fill
+                    objectFit="cover"
+                    className="-translate-x-[15%] translate-y-[15%] -rotate-45 transition-all group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
         <div className="flex justify-end py-6">
           <Link href="/" className="flex items-center gap-2">

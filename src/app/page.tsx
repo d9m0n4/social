@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MainImage } from '@/components/MainImage';
+import { MainImage } from '@/components/mainImage/MainImage';
 import { LastNews } from '@/widgets/lastNews/LastNews';
 import { Additionally } from '@/widgets/additionally/Additionally';
 import { Header } from '@/widgets/header/Header';

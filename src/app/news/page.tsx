@@ -5,8 +5,7 @@ export default function NewsPage() {
     <>
       <Header />
       <div className="container">
-        <div>
-        </div>
+        <div>news</div>
       </div>
     </>
   );

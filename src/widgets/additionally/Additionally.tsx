@@ -4,7 +4,7 @@ export const Additionally = () => {
   return (
     <div className="container">
       <div className="my-16 grid grid-cols-1 gap-8 rounded-2xl text-gray sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <Link href="/">
+        <Link href="/clubs">
           <div className="flex h-40 items-center justify-center rounded-2xl bg-white px-2 text-center text-2xl font-medium shadow-blockShadow transition-transform hover:scale-105 hover:text-black">
             <h4>Клубы</h4>
           </div>

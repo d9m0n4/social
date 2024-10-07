@@ -1,5 +1,5 @@
-import image from '../../public/new.jpg';
-import image2 from '../../public/1.jpg';
+import image from '../../../public/new.jpg';
+import image2 from '../../../public/1.jpg';
 
 export const MainImage = () => (
   <svg
