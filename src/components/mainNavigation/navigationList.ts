@@ -17,7 +17,7 @@ export const navigationList: navigationListT[] = [
     title: 'Центр',
   },
   {
-    link: '/divisions',
+    link: '/departments',
     title: 'Подразделения',
   },
   {
@@ -29,11 +29,11 @@ export const navigationList: navigationListT[] = [
     title: 'Контакты',
   },
   {
-    link: '/purchases',
+    link: '/procurement',
     title: 'Закупки',
   },
   {
-    link: '/fea',
+    link: '/finance',
     title: 'Финансово-хозяйственная деятельность',
   },
 ];

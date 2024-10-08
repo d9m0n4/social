@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
+import { BgPattern } from '@/components/bgPattern/BgPattern';
+import { Header } from '@/widgets/header/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="relative flex h-dvh flex-col">
+          <div className="absolute bottom-0 right-0 top-0 z-0">
+            <BgPattern />
+          </div>
+          <Header />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

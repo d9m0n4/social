@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MainImage } from '@/components/mainImage/MainImage';
 import { LastNews } from '@/widgets/lastNews/LastNews';
-import { Additionally } from '@/widgets/additionally/Additionally';
+import { AdditionallyMenu } from '@/widgets/additionallyMenu/AdditionallyMenu';
 import { Header } from '@/widgets/header/Header';
 import POSWidget from '@/widgets/POS/POSWidget';
 import { BgPattern } from '@/components/bgPattern/BgPattern';
@@ -65,7 +65,7 @@ export default function Home() {
         </section>
       </div>
       <main className="py-12">
-        <Additionally />
+        <AdditionallyMenu />
         <div className="container">
           <div className="my-16">
             <POSWidget />
