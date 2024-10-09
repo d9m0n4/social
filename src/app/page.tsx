@@ -76,38 +76,6 @@ export default function Home() {
           <div className="h-80 rounded-2xl bg-blue-main" />
         </div>
       </main>
-      <footer>
-        <div className="container py-6">
-          <nav className="text-center text-lg leading-[22px] text-black">
-            <ul className="flex flex-wrap justify-center gap-6">
-              <li>
-                <Link href="/">Главная</Link>
-              </li>
-              <li>
-                <Link href="/">Новости</Link>
-              </li>
-              <li>
-                <Link href="/">Центр</Link>
-              </li>
-              <li>
-                <Link href="/">Подразделения</Link>
-              </li>
-              <li>
-                <Link href="/">Обращения граждан</Link>
-              </li>
-              <li>
-                <Link href="/">Контакты</Link>
-              </li>
-              <li>
-                <Link href="/">Закупки</Link>
-              </li>
-              <li>
-                <Link href="/">Финансово-хозяйственная деятельность</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
     </>
   );
 }

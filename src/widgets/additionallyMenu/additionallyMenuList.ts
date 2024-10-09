@@ -47,7 +47,33 @@ export const additionallyMenuList: LinkItem[] = [
   {
     label: 'Инновационная деятельность',
     path: '/innovation',
-    children: [],
+    children: [
+      { label: 'Выездная мобильная бригада', path: '/innovation/mobile-brigade' },
+      { label: 'Участковая социальная служба', path: '/innovation/social-service' },
+      { label: 'Школа ухода', path: '/innovation/care-school' },
+      { label: 'Технология "Вместе с бабушкой"', path: '/innovation/with-grandma' },
+      {
+        label: 'Пункт проката технических средств реабилитации',
+        path: '/innovation/rehab-equipment',
+      },
+      {
+        label: 'Пункт проката предметов первой необходимости для новорожденных',
+        path: '/innovation/newborn-items',
+      },
+      {
+        label: 'Приёмная семья для граждан пожилого возраста и инвалидов',
+        path: '/innovation/foster-family',
+      },
+      { label: 'Виртуальный туризм', path: '/innovation/virtual-tourism' },
+      {
+        label: 'Служба социального сопровождения семей, воспитывающих детей-инвалидов',
+        path: '/innovation/social-support',
+      },
+      { label: 'Домашнее визитирование', path: '/innovation/home-visiting' },
+      { label: 'Социальная экспедиция', path: '/innovation/social-expedition' },
+      { label: 'Социальный патронаж семей', path: '/innovation/social-patronage' },
+      { label: 'Специализированный автотранспорт', path: '/innovation/special-transport' },
+    ],
   },
   {
     label: 'Служба ранней помощи',
@@ -96,6 +122,28 @@ export const additionallyMenuList: LinkItem[] = [
       {
         label: 'Перечень рекомендуемых мероприятий по улучшению условий труда',
         path: '/work-evaluation/recommendations',
+      },
+    ],
+  },
+  {
+    label: 'Проект "Семья.Перезагрузка"',
+    path: '/regional-project',
+    children: [
+      {
+        label: 'Приказ о создании междисциплинарной службы',
+        path: '/regional-project/service',
+      },
+      {
+        label: 'О межведомственной службе помощи в Яранском районе',
+        path: '/regional-project/order',
+      },
+      {
+        label: 'Нормативные документы',
+        path: '/regional-project/normative-docs',
+      },
+      {
+        label: 'Презентация',
+        path: '/regional-project/presentation',
       },
     ],
   },

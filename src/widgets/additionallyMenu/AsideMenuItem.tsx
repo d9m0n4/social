@@ -15,8 +15,6 @@ export const AsideMenuItem = ({ title, basePath, subMenu }: AsideMenuItemProps) 
   const pathname = usePathname();
   const router = useRouter();
 
-  console.log(pathname, basePath);
-
   useEffect(() => {
     if (pathname.startsWith(basePath)) {
       setIsMenuOpened(true);

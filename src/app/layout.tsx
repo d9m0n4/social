@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
-import { BgPattern } from '@/components/bgPattern/BgPattern';
-import { Header } from '@/widgets/header/Header';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,13 +20,39 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <div className="relative flex h-dvh flex-col">
-          <div className="absolute bottom-0 right-0 top-0 z-0">
-            <BgPattern />
+        {children}
+        <footer>
+          <div className="container py-6">
+            <nav className="text-center text-lg leading-[22px] text-black">
+              <ul className="flex flex-wrap justify-center gap-6">
+                <li>
+                  <Link href="/">Главная</Link>
+                </li>
+                <li>
+                  <Link href="/">Новости</Link>
+                </li>
+                <li>
+                  <Link href="/">Центр</Link>
+                </li>
+                <li>
+                  <Link href="/">Подразделения</Link>
+                </li>
+                <li>
+                  <Link href="/">Обращения граждан</Link>
+                </li>
+                <li>
+                  <Link href="/">Контакты</Link>
+                </li>
+                <li>
+                  <Link href="/">Закупки</Link>
+                </li>
+                <li>
+                  <Link href="/">Финансово-хозяйственная деятельность</Link>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <Header />
-          {children}
-        </div>
+        </footer>
       </body>
     </html>
   );

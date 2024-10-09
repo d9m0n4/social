@@ -5,7 +5,6 @@ import { navigationList } from './navigationList';
 
 export const MainNavigation = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <nav className="my-12 max-w-[630px] text-lg font-medium leading-[22px] text-[#454545]">
